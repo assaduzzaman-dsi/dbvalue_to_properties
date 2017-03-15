@@ -68,7 +68,7 @@ public class ReadProperty {
 		StringBuilder sb = new StringBuilder();
 
 		try {
-			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","root", "C0ke%Cane");
+			connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/test","user", "db_password");
 			ResultSet rs = connection.createStatement().executeQuery("select * from property");
 			while(rs.next()) {
 				sb.append(rs.getString("key"));
