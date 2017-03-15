@@ -82,7 +82,6 @@ public class ReadProperty {
 		}
 
 		
-		
 		return sb.toString();
 	}
 }
